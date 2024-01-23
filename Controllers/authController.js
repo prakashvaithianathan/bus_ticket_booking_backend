@@ -105,7 +105,7 @@ const Login = async (req, res) => {
 const ResetPassword = async (req, res) => {
   const { email } = req.body;
   const name = User.name;
-  const redirectUrl = "http://localhost:3000/reset-password";
+  const redirectUrl = "http://3.6.90.46/service/reset-password";
 
   // check if email exists
   User.find({ email })
